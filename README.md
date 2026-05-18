@@ -2,7 +2,7 @@
 
 ## How and Why Conway's Game of Life Predicts Primes — With Novel Results
 
-A deep investigation into the mathematical connections between cellular automata and prime number prediction, with **three novel contributions** that go beyond existing literature.
+A deep investigation into the mathematical connections between cellular automata and prime number prediction, with **novel contributions** that go beyond existing literature.
 
 ---
 
@@ -26,7 +26,42 @@ The period IS the primality test. No separate test needed — the CA dynamics th
 
 See `src/matrix_power_ca.py`.
 
-### 2. GoL Logic Circuits for Prime Detection (NEW)
+### 2. CA-Based Factoring via C^d Order Probing (NEW)
+
+**The key novel algorithm**: For composite M_p = 2^p - 1, the companion matrix C raised to the d-th power reveals factors when gcd(M_p, d) > 1:
+
+- **ord(C^d) = M_p / gcd(M_p, d)** — a fundamental group-theoretic identity
+- When gcd(M_p, d) > 1, the order drops below M_p, directly exposing the factor
+- Each C^d computation is a CA operation (GF(2) matrix multiplication)
+- Factor verification is also a CA operation (checking C^d^(M_p/gcd) = I)
+
+**Verified on all composite Mersenne numbers with p < 31**:
+
+| p | M_p | Factorization | Factors Found | Time |
+|---|-----|---------------|---------------|------|
+| 11 | 2,047 | 23 × 89 | 23, 89 ✓ | 0.001s |
+| 23 | 8,388,607 | 47 × 178,481 | 47, 178,481 ✓ | 2.98s |
+| 29 | 536,870,911 | 233 × 1,103 × 2,089 | 233, 1,103, 2,089 ✓ | 0.05s |
+
+**No false positives on prime Mersenne cases**: p = 7, 13, 17, 19 — all return zero factors.
+
+See `src/path1_path2_experiments.py`, `src/theorem_formalization.py`.
+
+### 3. Minimal Polynomial Construction — Theorem 2 Verified (NEW)
+
+For each factor q of M_p, the minimal polynomial of α^q (where α is a root of the primitive polynomial) is:
+
+1. **Irreducible of degree p** over GF(2)
+2. Its companion matrix has **order M_p / q** — directly revealing q
+3. The factor q is recovered as q = M_p / ord(companion(minpoly(α^q)))
+
+All 7 factor-polynomial pairs verified computationally. For example, for M₁₁ = 2047 = 23 × 89:
+- minpoly(α²³) = x¹¹ + x⁸ + x⁷ + x⁶ + x⁵ + x³ + x² + x + 1, companion order = 89
+- minpoly(α⁸⁹) = x¹¹ + x⁹ + x⁷ + x⁶ + x⁵ + x + 1, companion order = 23
+
+See `src/path1_path2_experiments.py`, `src/theorem_formalization.py`.
+
+### 4. GoL Logic Circuits for Prime Detection (NEW)
 
 For the first time, we implement **complete logic circuit simulations** in Conway's Game of Life for prime detection:
 
@@ -36,21 +71,40 @@ For the first time, we implement **complete logic circuit simulations** in Conwa
 - **Lucas-Lehmer Test circuit**: Squaring multiplier + Mersenne XOR-fold reduction + subtract-2 + zero detector + feedback register, verified for M₂=3, M₃=7, M₅=31, M₇=127, M₁₃=8191
 - **RLE pattern generation**: All circuits export as Golly-compatible RLE patterns
 
-Key GoL mechanisms: Gosper glider gun (clock), glider-glider collisions (AND/XOR), gun annihilation (NOT), stream merging (OR), reflectors (routing), blocks (registers).
-
 See `src/gol_circuits.py`.
 
-### 3. Statistical Discovery: Honest Negative Result (NEW)
+### 5. Honest Negative Results (NEW)
 
-We ran **800+ GoL simulations** with four number-encoding schemes (binary, prime-grid, factor, Mersenne) and extracted 70+ features per simulation, then trained Random Forest and Logistic Regression classifiers to predict primality from GoL dynamics.
+We report two rigorous negative results:
 
-**Honest finding**: No GoL population dynamics feature survives Bonferroni correction for primality prediction under non-trivially-encoding schemes. The best correlations (|r| ≈ 0.21) are weak. The 100% accuracy on factor encoding is trivially circular (the encoding directly encodes factorization).
+**A. No GoL emergent primality signal**: 800+ GoL simulations with 70+ features, ML classifiers cannot predict primality from population dynamics. The Primer works through organized computation, not emergent statistics.
 
-**Implication**: The Primer pattern works because it implements the Sieve of Eratosthenes with structured computing elements (glider guns, logic gates), NOT through any statistical signature in GoL population dynamics. GoL is a universal computer — primes emerge from organized computation, not from emergent statistics.
+**B. Spectral analysis of trace sequences CANNOT distinguish prime from composite M_p**: The trace sequence Tr(C^k) is an m-sequence with ideal two-valued periodic autocorrelation regardless of M_p's primality (Golomb property). Walsh-Hadamard transform, FFT, autocorrelation, and decimation analysis all fail to detect factors. Mann-Whitney U tests on all spectral metrics yield p > 0.05. The only method that recovers factors ("cycle completion") is equivalent to trial division.
 
-This negative result is itself a contribution: it rules out the hypothesis that simple GoL initial conditions naturally encode primality information.
+**Fundamental insight**: Factorization information lives in the **order structure** (C^d has reduced order when gcd(M_p,d) > 1), NOT in the **spectral structure** (identical for all m-sequences). Order-based CA methods succeed where spectral methods fail.
 
-See `src/gol_prime_discovery.py`.
+See `src/gol_prime_discovery.py`, `src/trace_spectral_analysis.py`, `src/path1_path2_experiments.py`.
+
+---
+
+## Rigorous Theorems (Formalized and Verified)
+
+### Theorem 1: Irreducibility-Primitivity Equivalence
+When M_p = 2^p - 1 is PRIME, every irreducible polynomial of degree p over GF(2) is primitive. When M_p is COMPOSITE, there exist non-primitive irreducible polynomials whose companion matrices have orders that are proper divisors of M_p, revealing factors.
+
+### Theorem 2: Factor Order
+If M_p = 2^p - 1 is composite with prime factor q, and α is a root of a primitive polynomial of degree p over GF(2), then:
+- (a) The minimal polynomial of α^q over GF(2) has degree p
+- (b) Its companion matrix has order M_p / q
+- (c) This directly reveals the factor q = M_p / ord(companion(minpoly(α^q)))
+
+### Theorem 3: Mersenne-Only
+The GF(2) companion matrix cycle structure encodes primality if and only if the number under test is of the form 2^p - 1. For Fermat numbers F_n = 2^(2^n) + 1, the companion matrix order equals F_n - 2 regardless of primality. For Proth numbers k·2^n + 1, no GF(2) companion matrix has order equal to the number.
+
+### Theorem 4: CRT Spectrum Fingerprinting
+For N = q₁ × q₂ × ... × qₖ, the cycle lengths of x → x² mod N are precisely the LCMs of cycle lengths from each component map x → x² mod qᵢ.
+
+All theorems computationally verified. See `src/theorem_formalization.py`.
 
 ---
 
@@ -82,30 +136,33 @@ Dean Hickerson's Primer pattern implements the Sieve of Eratosthenes using glide
 ```
 life-prime/
 ├── src/
-│   ├── matrix_power_ca.py         # GF(2) Matrix Power CA — novel Mersenne prime detector
-│   ├── gol_circuits.py            # GoL logic circuits for prime detection (NEW)
-│   ├── gol_prime_discovery.py     # Statistical discovery engine (NEW)
-│   ├── rule90_simulation.py       # Rule 90, Sierpiński, Gould's sequence
-│   ├── rule90_cyclic.py           # Rule 90 cyclic, LFSR, period analysis
-│   ├── llt_ca_simulation.py       # LLT as CA
-│   ├── gol_primer.py              # GoL Primer simulation
-│   ├── wolfram_prime_ca.py        # Wolfram's prime CA and Rule 30
-│   ├── visualize.py               # Original visualization suite
-│   ├── visualize_groundbreaking.py # New visualization suite (10 figures)
-│   └── generate_report.py         # Report generator
+│   ├── matrix_power_ca.py            # GF(2) Matrix Power CA — Mersenne prime detector
+│   ├── theorem_formalization.py      # Rigorous theorem proofs + verification
+│   ├── cycle_factor_extraction.py    # Factor extraction from CA cycle structure
+│   ├── trace_spectral_analysis.py    # Spectral analysis (WHT, FFT, AC) of trace sequences
+│   ├── path1_path2_experiments.py    # Comprehensive Path 1 + Path 2 experiments
+│   ├── gol_circuits.py               # GoL logic circuits for prime detection
+│   ├── gol_prime_discovery.py        # Statistical discovery engine
+│   ├── rule90_simulation.py          # Rule 90, Sierpiński, Gould's sequence
+│   ├── rule90_cyclic.py              # Rule 90 cyclic, LFSR, period analysis
+│   ├── llt_ca_simulation.py          # LLT as CA
+│   ├── gol_primer.py                 # GoL Primer simulation
+│   ├── wolfram_prime_ca.py           # Wolfram's prime CA and Rule 30
+│   ├── ca_factoring.py               # CA-based factoring methods
+│   ├── ca_generalized.py             # Generalized CA for Fermat/Proth numbers
+│   ├── visualize.py                  # Original visualization suite
+│   ├── visualize_groundbreaking.py   # New visualization suite
+│   ├── visualize_spectral.py         # Spectral analysis visualizations
+│   ├── visualize_path1_path2.py      # Path 1 + Path 2 visualizations
+│   └── generate_report.py            # Report generator
 ├── results/
-│   ├── fig_gf2_matrix_ca_spacetime.png  # Matrix Power CA spacetime diagrams
-│   ├── fig_llt_bit_evolution.png        # LLT bit evolution
-│   ├── fig_gol_llt_circuit.png          # LLT circuit architecture
-│   ├── fig_gol_sieve.png                # GoL sieve visualization
-│   ├── fig_ml_discovery.png             # ML discovery results
-│   ├── fig_mersenne_period_structure.png # Orbit structure comparison
-│   ├── fig_rule90_mersenne.png          # Rule 90 → Mersenne connection
-│   ├── fig_unification.png              # Grand unification diagram
-│   ├── fig_gol_gate_patterns.png        # GoL gate patterns
-│   ├── fig_negative_result.png          # Honest negative result
-│   ├── gol_prime_discovery_results.json # Full ML results
-│   └── ... (plus original 8 figures)
+│   ├── fig_factor_discovery_cd_probing.png      # C^d order probing results
+│   ├── fig_spectral_negative_result.png          # Spectral analysis negative result
+│   ├── fig_minimal_polynomial_construction.png   # Minimal polynomial construction
+│   ├── fig_prime_vs_composite_comparison.png     # Prime vs composite spectral comparison
+│   ├── path1_path2_results.json                  # Comprehensive experiment results
+│   ├── spectral_analysis_results.json            # Spectral analysis data
+│   └── ... (plus 30+ other figures)
 └── README.md
 ```
 
@@ -114,31 +171,31 @@ life-prime/
 ## Running the Simulations
 
 ```bash
+# NOVEL: Comprehensive Path 1 + Path 2 experiments
+python src/path1_path2_experiments.py
+
+# NOVEL: Theorem formalization and verification
+python src/theorem_formalization.py
+
 # NOVEL: GF(2) Matrix Power CA — Mersenne prime detector
 python src/matrix_power_ca.py
 
 # NOVEL: GoL logic circuits for prime detection
 python src/gol_circuits.py
 
+# NOVEL: Spectral analysis (negative result)
+python src/trace_spectral_analysis.py
+
 # NOVEL: Statistical discovery engine
 python src/gol_prime_discovery.py
 
-# Rule 90 Sierpiński triangle and Gould's sequence
-python src/rule90_simulation.py
+# Generate Path 1 + Path 2 visualizations
+python src/visualize_path1_path2.py
 
-# Rule 90 on cyclic grids — LFSR period analysis
-python src/rule90_cyclic.py
+# Generate spectral analysis figures
+python src/visualize_spectral.py
 
-# Lucas-Lehmer Test as CA
-python src/llt_ca_simulation.py
-
-# Game of Life Primer
-python src/gol_primer.py
-
-# Wolfram's prime CA and Rule 30
-python src/wolfram_prime_ca.py
-
-# Generate ALL visualization figures (original + groundbreaking)
+# Generate ALL visualization figures
 python src/visualize_groundbreaking.py
 ```
 
@@ -166,6 +223,23 @@ GF(2) Matrix Power CA (NOVEL)
     └── Mersenne PRIME → single orbit of all non-zero states
     └── Mersenne COMPOSITE → fragmented orbits
     └── THE PERIOD IS THE PRIMALITY TEST
+    │
+    └── C^d ORDER PROBING (NOVEL FACTORING)
+        └── ord(C^d) = M_p/gcd(M_p,d)
+        └── When gcd(M_p,d) > 1: order drops, factor revealed
+        └── Each C^d is a CA step over GF(2)
+        └── Verified: M_11, M_23, M_29 fully factored
+        │
+        └── minpoly(α^q) CONSTRUCTION (NOVEL)
+            └── Irreducible of degree p
+            └── Companion order = M_p/q
+            └── Factor q = M_p / ord(companion)
+
+SPECTRAL ANALYSIS → RIGOROUS NEGATIVE RESULT
+    └── Tr(C^k) is an m-sequence: ideal autocorrelation
+    └── WHT, FFT, AC: cannot distinguish prime/composite
+    └── Mann-Whitney U: all p > 0.05
+    └── Factor info in ORDER structure, not spectral
 
 Lucas-Lehmer Test (s → s²-2 mod M_p)
     ├── Squaring = Frobenius endomorphism (LINEAR over GF(2)!)
@@ -178,7 +252,7 @@ GoL Logic Circuits (NOVEL)
     ├── LLT circuit: squarer + fold + detect
     └── RLE patterns for Golly
 
-Statistical Discovery (NOVEL)
+Statistical Discovery (NOVEL NEGATIVE)
     └── 800+ GoL simulations, 70+ features, ML classifiers
     └── HONEST NEGATIVE: no emergent primality signal
     └── Primes require ORGANIZED COMPUTATION, not statistics
@@ -197,3 +271,5 @@ ALL unified by: Linear operations over GF(2)
 - Tao, T. (2016). "Lucas-Lehmer test and the DiGraph structure."
 - OEIS A001316: Gould's sequence.
 - Rendell, P. (2002). "Turing Universality of the Game of Life." *Collision-Based Computing*.
+- Nowak, K., Kępczyk, M. (2024). "On the application of cellular automata to the primality testing." arXiv:2511.17389.
+- Carmona, J., Píerez, L. et al. (2024). "Cellular automata and number theory." arXiv:2407.19898.

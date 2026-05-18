@@ -1,0 +1,601 @@
+{
+  "part_a_factor_discovery": {
+    "11": {
+      "p": 11,
+      "M_p": 2047,
+      "is_mersenne_prime": false,
+      "factors_found": [
+        23,
+        89
+      ],
+      "known_factors": [
+        23,
+        89
+      ],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {
+        "23": 23,
+        "89": 23
+      },
+      "computation_time": 0.001062154769897461
+    },
+    "23": {
+      "p": 23,
+      "M_p": 8388607,
+      "is_mersenne_prime": false,
+      "factors_found": [
+        47,
+        178481
+      ],
+      "known_factors": [
+        47,
+        178481
+      ],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {
+        "47": 47,
+        "178481": 47
+      },
+      "computation_time": 2.9784414768218994
+    },
+    "29": {
+      "p": 29,
+      "M_p": 536870911,
+      "is_mersenne_prime": false,
+      "factors_found": [
+        233,
+        1103,
+        2089
+      ],
+      "known_factors": [
+        233,
+        1103,
+        2089
+      ],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {
+        "233": 233,
+        "1103": 233,
+        "2089": 233
+      },
+      "computation_time": 0.04706096649169922
+    },
+    "7": {
+      "p": 7,
+      "M_p": 127,
+      "is_mersenne_prime": true,
+      "factors_found": [],
+      "known_factors": [],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {},
+      "computation_time": 7.557868957519531e-05
+    },
+    "13": {
+      "p": 13,
+      "M_p": 8191,
+      "is_mersenne_prime": true,
+      "factors_found": [],
+      "known_factors": [],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {},
+      "computation_time": 0.0003218650817871094
+    },
+    "17": {
+      "p": 17,
+      "M_p": 131071,
+      "is_mersenne_prime": true,
+      "factors_found": [],
+      "known_factors": [],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {},
+      "computation_time": 0.0018415451049804688
+    },
+    "19": {
+      "p": 19,
+      "M_p": 524287,
+      "is_mersenne_prime": true,
+      "factors_found": [],
+      "known_factors": [],
+      "all_factors_found": true,
+      "false_positives": [],
+      "d_of_first_discovery": {},
+      "computation_time": 0.0048449039459228516
+    }
+  },
+  "part_b_spectral_analysis": {
+    "spectral_metrics": {
+      "prime": {
+        "wht_kurtosis": [
+          0.938337053571427,
+          1.37968870802049,
+          0.989562844537875,
+          0.8857634476995666
+        ],
+        "wht_variance": [
+          25.28395061728396,
+          6918.516327204159,
+          5978.553346967399,
+          5976.251478046854
+        ],
+        "wht_num_large_peaks": [
+          1.0,
+          209.0,
+          158.0,
+          161.0
+        ],
+        "fft_num_peaks_3sigma": [
+          0.0,
+          8.0,
+          294.0,
+          316.0
+        ],
+        "fft_spectral_flatness": [
+          0.5887850467289721,
+          0.600319904704062,
+          0.5097100040723308,
+          0.5039509820383231
+        ],
+        "pacf_num_distinct": [
+          1.0,
+          31.0,
+          123.0,
+          131.0
+        ],
+        "pacf_max_deviation": [
+          7.806255641895632e-17,
+          0.004272446034519601,
+          0.01683807367226065,
+          0.01928520202272921
+        ],
+        "aacf_range": [
+          2.0,
+          0.006443350127395469,
+          0.03259885359630306,
+          0.037716779301444764
+        ],
+        "aacf_std": [
+          0.19650309323793905,
+          0.0009680723317054564,
+          0.007763057120421412,
+          0.007800683926982128
+        ]
+      },
+      "composite": {
+        "wht_kurtosis": [
+          0.37864162088699693,
+          1.0390643275538212,
+          10.961583770102282
+        ],
+        "wht_variance": [
+          362.117223698531,
+          6032.778857830295,
+          1652.8667359014612
+        ],
+        "wht_num_large_peaks": [
+          8.0,
+          154.0,
+          51.0
+        ],
+        "fft_num_peaks_3sigma": [
+          8.0,
+          299.0,
+          45.0
+        ],
+        "fft_spectral_flatness": [
+          0.60601441391227,
+          0.47855671502242897,
+          0.14735506005931942
+        ],
+        "pacf_num_distinct": [
+          1.0,
+          141.0,
+          131.0
+        ],
+        "pacf_max_deviation": [
+          6.25584653524136e-17,
+          0.03833019733430376,
+          0.25097656436264515
+        ],
+        "aacf_range": [
+          0.042988359840908,
+          0.056810732821021795,
+          0.23347914402737804
+        ],
+        "aacf_std": [
+          0.008279515378038537,
+          0.009010062145293379,
+          0.04114590916058251
+        ]
+      }
+    },
+    "mann_whitney_results": {
+      "wht_kurtosis": {
+        "U": 5.0,
+        "z": -0.35355339059327373,
+        "p_approx": 0.7236737386464728,
+        "n1": 4,
+        "n2": 3,
+        "R1": 15.0
+      },
+      "wht_variance": {
+        "U": 5.0,
+        "z": -0.35355339059327373,
+        "p_approx": 0.7236737386464728,
+        "n1": 4,
+        "n2": 3,
+        "R1": 17.0
+      },
+      "wht_num_large_peaks": {
+        "U": 3.0,
+        "z": -1.0606601717798212,
+        "p_approx": 0.2888444303633435,
+        "n1": 4,
+        "n2": 3,
+        "R1": 19.0
+      },
+      "fft_num_peaks_3sigma": {
+        "U": 5.5,
+        "z": -0.17837651700316895,
+        "p_approx": 0.8584273052863693,
+        "n1": 4,
+        "n2": 3,
+        "R1": 15.5
+      },
+      "fft_spectral_flatness": {
+        "U": 4.0,
+        "z": -0.7071067811865475,
+        "p_approx": 0.47949998369525315,
+        "n1": 4,
+        "n2": 3,
+        "R1": 18.0
+      },
+      "pacf_num_distinct": {
+        "U": 4.0,
+        "z": -0.7200822998230956,
+        "p_approx": 0.47147418602339874,
+        "n1": 4,
+        "n2": 3,
+        "R1": 14.0
+      },
+      "pacf_max_deviation": {
+        "U": 4.0,
+        "z": -0.7071067811865475,
+        "p_approx": 0.47949998369525315,
+        "n1": 4,
+        "n2": 3,
+        "R1": 14.0
+      },
+      "aacf_range": {
+        "U": 3.0,
+        "z": -1.0606601717798212,
+        "p_approx": 0.2888444303633435,
+        "n1": 4,
+        "n2": 3,
+        "R1": 13.0
+      },
+      "aacf_std": {
+        "U": 3.0,
+        "z": -1.0606601717798212,
+        "p_approx": 0.2888444303633435,
+        "n1": 4,
+        "n2": 3,
+        "R1": 13.0
+      }
+    },
+    "method_recovery": {
+      "cycle_completion": {
+        "hits": 4,
+        "total": 9
+      },
+      "wht": {
+        "hits": 0,
+        "total": 7
+      },
+      "fft": {
+        "hits": 0,
+        "total": 7
+      },
+      "autocorrelation": {
+        "hits": 0,
+        "total": 7
+      },
+      "decimation_balance": {
+        "hits": 0,
+        "total": 7
+      },
+      "folding": {
+        "hits": 0,
+        "total": 7
+      },
+      "linear_complexity": {
+        "hits": 0,
+        "total": 7
+      }
+    }
+  },
+  "part_c_minimal_polynomials": {
+    "11": {
+      "M_p": 2047,
+      "factors": [
+        23,
+        89
+      ],
+      "factor_results": [
+        {
+          "q": 23,
+          "min_poly_coeffs": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "is_irreducible": true,
+          "degree": 11,
+          "degree_correct": true,
+          "companion_order": 89,
+          "expected_order": 89,
+          "order_correct": true,
+          "recovered_factor": 23,
+          "factor_correct": true
+        },
+        {
+          "q": 89,
+          "min_poly_coeffs": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "is_irreducible": true,
+          "degree": 11,
+          "degree_correct": true,
+          "companion_order": 23,
+          "expected_order": 23,
+          "order_correct": true,
+          "recovered_factor": 89,
+          "factor_correct": true
+        }
+      ],
+      "all_verified": true
+    },
+    "23": {
+      "M_p": 8388607,
+      "factors": [
+        47,
+        178481
+      ],
+      "factor_results": [
+        {
+          "q": 47,
+          "min_poly_coeffs": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "is_irreducible": true,
+          "degree": 23,
+          "degree_correct": true,
+          "companion_order": 178481,
+          "expected_order": 178481,
+          "order_correct": true,
+          "recovered_factor": 47,
+          "factor_correct": true
+        },
+        {
+          "q": 178481,
+          "min_poly_coeffs": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "is_irreducible": true,
+          "degree": 23,
+          "degree_correct": true,
+          "companion_order": 47,
+          "expected_order": 47,
+          "order_correct": true,
+          "recovered_factor": 178481,
+          "factor_correct": true
+        }
+      ],
+      "all_verified": true
+    },
+    "29": {
+      "M_p": 536870911,
+      "factors": [
+        233,
+        1103,
+        2089
+      ],
+      "factor_results": [
+        {
+          "q": 233,
+          "min_poly_coeffs": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "is_irreducible": true,
+          "degree": 29,
+          "degree_correct": true,
+          "companion_order": 2304167,
+          "expected_order": 2304167,
+          "order_correct": true,
+          "recovered_factor": 233,
+          "factor_correct": true
+        },
+        {
+          "q": 1103,
+          "min_poly_coeffs": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "is_irreducible": true,
+          "degree": 29,
+          "degree_correct": true,
+          "companion_order": 486737,
+          "expected_order": 486737,
+          "order_correct": true,
+          "recovered_factor": 1103,
+          "factor_correct": true
+        },
+        {
+          "q": 2089,
+          "min_poly_coeffs": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "is_irreducible": true,
+          "degree": 29,
+          "degree_correct": true,
+          "companion_order": 256999,
+          "expected_order": 256999,
+          "order_correct": true,
+          "recovered_factor": 2089,
+          "factor_correct": true
+        }
+      ],
+      "all_verified": true
+    }
+  }
+}
