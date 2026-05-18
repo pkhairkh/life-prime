@@ -1,0 +1,257 @@
+{
+  "period_analysis": [
+    {
+      "grid_size": 4,
+      "period": 1,
+      "theoretical_max_period": 3,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.010373115539550781
+    },
+    {
+      "grid_size": 6,
+      "period": 2,
+      "theoretical_max_period": 7,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.0015480518341064453
+    },
+    {
+      "grid_size": 8,
+      "period": 1,
+      "theoretical_max_period": 15,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.0024976730346679688
+    },
+    {
+      "grid_size": 10,
+      "period": 6,
+      "theoretical_max_period": 31,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.0033702850341796875
+    },
+    {
+      "grid_size": 12,
+      "period": 4,
+      "theoretical_max_period": 63,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.0030221939086914062
+    },
+    {
+      "grid_size": 14,
+      "period": 14,
+      "theoretical_max_period": 127,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.006992816925048828
+    },
+    {
+      "grid_size": 16,
+      "period": 1,
+      "theoretical_max_period": 255,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.004336118698120117
+    },
+    {
+      "grid_size": 18,
+      "period": 14,
+      "theoretical_max_period": 511,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.0028221607208251953
+    },
+    {
+      "grid_size": 20,
+      "period": 12,
+      "theoretical_max_period": 1023,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 0.0028481483459472656
+    },
+    {
+      "grid_size": 22,
+      "period": 2,
+      "theoretical_max_period": 2047,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 1.564089298248291
+    },
+    {
+      "grid_size": 24,
+      "period": 2,
+      "theoretical_max_period": 4095,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 3.111506700515747
+    },
+    {
+      "grid_size": 26,
+      "period": 2,
+      "theoretical_max_period": 8191,
+      "achieves_max": false,
+      "is_max_mersenne": true,
+      "computation_time": 6.244491338729858
+    }
+  ],
+  "mersenne_structure": [
+    {
+      "k": 2,
+      "grid_size": 4,
+      "mersenne_number": 3,
+      "is_mersenne_prime": true,
+      "max_period": 3,
+      "achieves_max": false,
+      "actual_period": 1,
+      "cycle_info": {
+        "num_cycles_found": 14,
+        "cycle_lengths": {
+          "3": 13,
+          "2": 1
+        },
+        "max_cycle_length": 3,
+        "states_sampled": 16
+      }
+    },
+    {
+      "k": 3,
+      "grid_size": 6,
+      "mersenne_number": 7,
+      "is_mersenne_prime": true,
+      "max_period": 7,
+      "achieves_max": false,
+      "actual_period": 2,
+      "cycle_info": {
+        "num_cycles_found": 51,
+        "cycle_lengths": {
+          "2": 13,
+          "3": 38
+        },
+        "max_cycle_length": 3,
+        "states_sampled": 64
+      }
+    },
+    {
+      "k": 4,
+      "grid_size": 8,
+      "mersenne_number": 15,
+      "is_mersenne_prime": false,
+      "max_period": 15,
+      "achieves_max": false,
+      "actual_period": 1,
+      "cycle_info": {
+        "num_cycles_found": 197,
+        "cycle_lengths": {
+          "3": 1,
+          "5": 188,
+          "4": 8
+        },
+        "max_cycle_length": 5,
+        "states_sampled": 256
+      }
+    },
+    {
+      "k": 5,
+      "grid_size": 10,
+      "mersenne_number": 31,
+      "is_mersenne_prime": true,
+      "max_period": 31,
+      "achieves_max": false,
+      "actual_period": 6,
+      "cycle_info": {
+        "num_cycles_found": 765,
+        "cycle_lengths": {
+          "7": 711,
+          "6": 7,
+          "4": 40,
+          "2": 5,
+          "3": 2
+        },
+        "max_cycle_length": 7,
+        "states_sampled": 1000
+      }
+    },
+    {
+      "k": 6,
+      "grid_size": 12,
+      "mersenne_number": 63,
+      "is_mersenne_prime": false,
+      "max_period": 63,
+      "achieves_max": false,
+      "actual_period": 4,
+      "cycle_info": {
+        "num_cycles_found": 877,
+        "cycle_lengths": {
+          "3": 24,
+          "6": 703,
+          "5": 109,
+          "4": 39,
+          "2": 2
+        },
+        "max_cycle_length": 6,
+        "states_sampled": 1000
+      }
+    },
+    {
+      "k": 7,
+      "grid_size": 14,
+      "mersenne_number": 127,
+      "is_mersenne_prime": true,
+      "max_period": 127,
+      "achieves_max": false,
+      "actual_period": 14,
+      "cycle_info": {
+        "num_cycles_found": 818,
+        "cycle_lengths": {
+          "15": 733,
+          "14": 66,
+          "8": 17,
+          "2": 2
+        },
+        "max_cycle_length": 15,
+        "states_sampled": 1000
+      }
+    },
+    {
+      "k": 8,
+      "grid_size": 16,
+      "mersenne_number": 255,
+      "is_mersenne_prime": false,
+      "max_period": 255,
+      "achieves_max": false,
+      "actual_period": 1,
+      "cycle_info": {
+        "num_cycles_found": 981,
+        "cycle_lengths": {
+          "9": 741,
+          "6": 7,
+          "8": 184,
+          "7": 49
+        },
+        "max_cycle_length": 9,
+        "states_sampled": 1000
+      }
+    },
+    {
+      "k": 10,
+      "grid_size": 20,
+      "mersenne_number": 1023,
+      "is_mersenne_prime": false,
+      "max_period": 1023,
+      "achieves_max": false,
+      "actual_period": 12
+    },
+    {
+      "k": 12,
+      "grid_size": 24,
+      "mersenne_number": 4095,
+      "is_mersenne_prime": false,
+      "max_period": 4095,
+      "achieves_max": false,
+      "actual_period": 8
+    }
+  ]
+}
