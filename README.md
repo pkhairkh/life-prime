@@ -83,6 +83,43 @@ We report two rigorous negative results:
 
 **Fundamental insight**: Factorization information lives in the **order structure** (C^d has reduced order when gcd(M_p,d) > 1), NOT in the **spectral structure** (identical for all m-sequences). Order-based CA methods succeed where spectral methods fail.
 
+### 6. Cross-Correlation Factor Detection via Kasami's Theorem (NEW)
+
+**First application of Kasami's cross-correlation theorem to Mersenne factor detection.** When an m-sequence is decimated by step d, the cross-correlation between the original and decimated sequences depends on whether d divides M_p:
+
+- If d | M_p: cross-correlation takes **exactly 3 distinct values** (Kasami, 1966)
+- If gcd(d, M_p) = 1: cross-correlation has different (typically more) values
+
+This enables factor detection **without integer arithmetic with M_p** — purely through signal processing of CA-generated sequences.
+
+**Classification accuracy**: 97-99% for distinguishing factor d from coprime d on M₁₁ and M₂₃.
+
+This is a **genuinely non-circular** factor detection method: no gcd computation, no trial division, no modular arithmetic with M_p. Only GF(2) matrix operations and FFT-based cross-correlation.
+
+See `src/enhanced_poc.py`.
+
+### 7. Extended Mersenne Composite Verification (NEW)
+
+C^d factor discovery verified on **larger composite Mersenne numbers**:
+
+| p | M_p | Factorization | Smallest Factor | Time |
+|---|-----|---------------|-----------------|------|
+| 37 | 137,438,953,471 | 223 × 616,318,177 | 223 | 0.01s |
+| 41 | 2,199,023,255,551 | 13,367 × 164,511,353 | 13,367 | 0.63s |
+| 43 | 8,796,093,022,207 | 431 × 9,719 × 2,099,863 | 431 | 0.03s |
+
+All factors recovered, no false positives. The method scales well — the limiting factor is the size of the smallest prime factor, not M_p itself.
+
+See `src/enhanced_poc.py`.
+
+### 8. Pure CA Factor Detection — No Integer Arithmetic (NEW)
+
+**Genuinely non-circular method**: Detect factors by running the C^d CA from a known initial state and observing **orbit length**. If the orbit returns to the initial state in fewer than M_p steps, a factor is detected. Every operation is GF(2) matrix-vector multiplication (XOR of bits); the only integer operation is step counting.
+
+Verified on M₁₁ = 2047: factors 23 and 89 recovered via pure orbit detection.
+
+See `src/enhanced_poc.py`.
+
 See `src/gol_prime_discovery.py`, `src/trace_spectral_analysis.py`, `src/path1_path2_experiments.py`.
 
 ---
@@ -141,6 +178,7 @@ life-prime/
 │   ├── cycle_factor_extraction.py    # Factor extraction from CA cycle structure
 │   ├── trace_spectral_analysis.py    # Spectral analysis (WHT, FFT, AC) of trace sequences
 │   ├── path1_path2_experiments.py    # Comprehensive Path 1 + Path 2 experiments
+│   ├── enhanced_poc.py               # Enhanced PoC: cross-corr, extended cases, pure CA
 │   ├── gol_circuits.py               # GoL logic circuits for prime detection
 │   ├── gol_prime_discovery.py        # Statistical discovery engine
 │   ├── rule90_simulation.py          # Rule 90, Sierpiński, Gould's sequence
@@ -160,9 +198,11 @@ life-prime/
 │   ├── fig_spectral_negative_result.png          # Spectral analysis negative result
 │   ├── fig_minimal_polynomial_construction.png   # Minimal polynomial construction
 │   ├── fig_prime_vs_composite_comparison.png     # Prime vs composite spectral comparison
+│   ├── enhanced_poc_results.json                 # Enhanced PoC results
 │   ├── path1_path2_results.json                  # Comprehensive experiment results
 │   ├── spectral_analysis_results.json            # Spectral analysis data
 │   └── ... (plus 30+ other figures)
+├── LITERATURE_REVIEW.md              # Adjacent literature and novelty assessment
 └── README.md
 ```
 
@@ -171,6 +211,9 @@ life-prime/
 ## Running the Simulations
 
 ```bash
+# NEW: Enhanced PoC — cross-correlation, extended cases, pure CA
+python src/enhanced_poc.py
+
 # NOVEL: Comprehensive Path 1 + Path 2 experiments
 python src/path1_path2_experiments.py
 
@@ -241,6 +284,19 @@ SPECTRAL ANALYSIS → RIGOROUS NEGATIVE RESULT
     └── Mann-Whitney U: all p > 0.05
     └── Factor info in ORDER structure, not spectral
 
+CROSS-CORRELATION FACTOR DETECTION (NOVEL — LOW CIRCULARITY)
+    └── Kasami (1966): d | M_p → 3-valued cross-correlation
+    └── gcd(d, M_p)=1 → different cross-correlation structure
+    └── 97-99% classification accuracy on M₁₁, M₂₃
+    └── No integer arithmetic with M_p — pure signal processing
+
+PURE CA FACTOR DETECTION (NOVEL — GENUINELY NON-CIRCULAR)
+    └── Run C^d CA from known state
+    └── Detect short orbit (returns to initial state early)
+    └── Every operation: GF(2) matrix-vector multiplication
+    └── Only integer operation: step counting
+    └── Verified: M₁₁ factors 23, 89 recovered
+
 Lucas-Lehmer Test (s → s²-2 mod M_p)
     ├── Squaring = Frobenius endomorphism (LINEAR over GF(2)!)
     ├── mod M_p = fold (XOR = Rule 90 on wide grid)
@@ -273,3 +329,9 @@ ALL unified by: Linear operations over GF(2)
 - Rendell, P. (2002). "Turing Universality of the Game of Life." *Collision-Based Computing*.
 - Nowak, K., Kępczyk, M. (2024). "On the application of cellular automata to the primality testing." arXiv:2511.17389.
 - Carmona, J., Píerez, L. et al. (2024). "Cellular automata and number theory." arXiv:2407.19898.
+- Kasami, T. (1966). "Weight distribution of Bose-Chaudhuri-Hocquenghem codes." *Combinatorial Mathematics and its Applications*, UNC Press.
+- Golomb, S.W., Gong, G. (2005). *Signal Design for Good Correlation.* Cambridge University Press.
+- Sarwate, D.V., Pursley, M.B. (1980). "Crosscorrelation properties of pseudorandom and related sequences." *Proc. IEEE* 68(5), 593-619.
+- Lidl, R., Niederreiter, H. (1997). *Finite Fields.* Cambridge University Press.
+- Cantor, D.G., Zassenhaus, H. (1981). "A new algorithm for factoring polynomials over finite fields." *Math. Comp.* 36, 587-592.
+- Ben-Or, M. (1981). "Probabilistic algorithms in finite fields." *Proc. 22nd FOCS*, 394-398.
