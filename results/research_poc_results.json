@@ -1,0 +1,896 @@
+{
+  "orbit_p11": [
+    {
+      "p": 11,
+      "d": 2,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 3,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 5,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 7,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 11,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 13,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 17,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 19,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 23,
+      "M_p": 2047,
+      "orbit_length": 89,
+      "d_divides_Mp": true,
+      "predicted_orbit": 89,
+      "orbit_matches_prediction": true,
+      "factor_revealed": 23,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 29,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 31,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 37,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 41,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 43,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 47,
+      "M_p": 2047,
+      "orbit_length": 2047,
+      "d_divides_Mp": false,
+      "predicted_orbit": 2047,
+      "orbit_matches_prediction": true,
+      "factor_revealed": null,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 11,
+      "d": 89,
+      "M_p": 2047,
+      "orbit_length": 23,
+      "d_divides_Mp": true,
+      "predicted_orbit": 23,
+      "orbit_matches_prediction": true,
+      "factor_revealed": 89,
+      "method": "pure_CA_orbit"
+    }
+  ],
+  "orbit_p23": [
+    {
+      "p": 23,
+      "d": 2,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 3,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 5,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 7,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 11,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 13,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 17,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 19,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 23,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 29,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 31,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 37,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 41,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 43,
+      "M_p": 8388607,
+      "orbit_length": null,
+      "max_steps_exceeded": true,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 47,
+      "M_p": 8388607,
+      "orbit_length": 178481,
+      "d_divides_Mp": true,
+      "predicted_orbit": 178481,
+      "orbit_matches_prediction": true,
+      "factor_revealed": 47,
+      "method": "pure_CA_orbit"
+    },
+    {
+      "p": 23,
+      "d": 178481,
+      "M_p": 8388607,
+      "orbit_length": 47,
+      "d_divides_Mp": true,
+      "predicted_orbit": 47,
+      "orbit_matches_prediction": true,
+      "factor_revealed": 178481,
+      "method": "pure_CA_orbit"
+    }
+  ],
+  "floyd_p11": [
+    {
+      "p": 11,
+      "d": 2,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 3,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 5,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 7,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 11,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 13,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 17,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 19,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 23,
+      "M_p": 2047,
+      "cycle_detected": true,
+      "cycle_start": 0,
+      "cycle_length": 89,
+      "steps_used": 178,
+      "d_divides_Mp": true,
+      "predicted_orbit": 89,
+      "factor_revealed": 23,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 29,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 31,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 37,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 41,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 43,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 47,
+      "M_p": 2047,
+      "cycle_detected": false,
+      "steps_used": 90,
+      "method": "floyd_cycle_detection"
+    },
+    {
+      "p": 11,
+      "d": 89,
+      "M_p": 2047,
+      "cycle_detected": true,
+      "cycle_start": 0,
+      "cycle_length": 23,
+      "steps_used": 46,
+      "d_divides_Mp": true,
+      "predicted_orbit": 23,
+      "factor_revealed": 89,
+      "method": "floyd_cycle_detection"
+    }
+  ],
+  "lc_drop_p7": {
+    "p": 7,
+    "M_p": 127,
+    "is_mersenne_prime": true,
+    "known_factors": [],
+    "p_value": 7,
+    "factor_d_lcs": [],
+    "coprime_d_lcs": [
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "num_lc_drop_factor": 0,
+    "num_lc_drop_coprime": 0,
+    "num_no_drop_factor": 0,
+    "factor_d_details": [],
+    "lc_as_factor_detector": {
+      "sensitivity": 0.0,
+      "false_positive_rate": 0.0,
+      "factor_misses": 0
+    },
+    "method": "lc_drop_detection"
+  },
+  "lc_drop_p11": {
+    "p": 11,
+    "M_p": 2047,
+    "is_mersenne_prime": false,
+    "known_factors": [
+      23,
+      89
+    ],
+    "p_value": 11,
+    "factor_d_lcs": [
+      11
+    ],
+    "coprime_d_lcs": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "num_lc_drop_factor": 0,
+    "num_lc_drop_coprime": 0,
+    "num_no_drop_factor": 1,
+    "factor_d_details": [
+      {
+        "d": 23,
+        "linear_complexity": 11,
+        "lc_drops": false,
+        "lc_drop_amount": 0,
+        "is_factor": true,
+        "is_coprime": false
+      }
+    ],
+    "lc_as_factor_detector": {
+      "sensitivity": 0.0,
+      "false_positive_rate": 0.0,
+      "factor_misses": 1
+    },
+    "method": "lc_drop_detection"
+  },
+  "lc_drop_p13": {
+    "p": 13,
+    "M_p": 8191,
+    "is_mersenne_prime": true,
+    "known_factors": [],
+    "p_value": 13,
+    "factor_d_lcs": [],
+    "coprime_d_lcs": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "num_lc_drop_factor": 0,
+    "num_lc_drop_coprime": 0,
+    "num_no_drop_factor": 0,
+    "factor_d_details": [],
+    "lc_as_factor_detector": {
+      "sensitivity": 0.0,
+      "false_positive_rate": 0.0,
+      "factor_misses": 0
+    },
+    "method": "lc_drop_detection"
+  },
+  "cc_corrected_p7": {
+    "p": 7,
+    "M_p": 127,
+    "is_mersenne_prime": true,
+    "num_factor_ds": 0,
+    "num_coprime_ds": 5,
+    "factor_cc_mean": null,
+    "coprime_cc_mean": 14.6,
+    "factor_cc_std": null,
+    "coprime_cc_std": 3.3823069050575527,
+    "factor_ds_details": [],
+    "coprime_ds_sample": [
+      {
+        "d": 2,
+        "distinct_cc_values": 18,
+        "cc_mean": 0.002869897959183678,
+        "cc_std": 0.07971428555100996,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 3,
+        "distinct_cc_values": 17,
+        "cc_mean": 0.01937984496124031,
+        "cc_std": 0.10571218825492848,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 4,
+        "distinct_cc_values": 17,
+        "cc_mean": 0.034274193548387094,
+        "cc_std": 0.1487843123185088,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 5,
+        "distinct_cc_values": 10,
+        "cc_mean": 0.038461538461538464,
+        "cc_std": 0.10434353820192721,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 6,
+        "distinct_cc_values": 11,
+        "cc_mean": 0.07142857142857142,
+        "cc_std": 0.1454893279377148,
+        "is_factor": false,
+        "is_coprime": true
+      }
+    ],
+    "kasami_correction": "Kasami theorem gives 3-valued CC ONLY for d=2^(n/2)\u00b11, NOT for all d|M_p. The cross-correlation approach to factor detection is NOT as straightforward as previously assumed.",
+    "method": "corrected_cross_correlation"
+  },
+  "cc_corrected_p11": {
+    "p": 11,
+    "M_p": 2047,
+    "is_mersenne_prime": false,
+    "num_factor_ds": 2,
+    "num_coprime_ds": 94,
+    "factor_cc_mean": 19.0,
+    "coprime_cc_mean": 17.425531914893618,
+    "factor_cc_std": 9.0,
+    "coprime_cc_std": 6.365614679587623,
+    "factor_ds_details": [
+      {
+        "d": 23,
+        "distinct_cc_values": 28,
+        "cc_mean": -0.027516624627379044,
+        "cc_std": 0.08380783715734921,
+        "is_factor": true,
+        "is_coprime": false
+      },
+      {
+        "d": 89,
+        "distinct_cc_values": 10,
+        "cc_mean": 0.06126482213438735,
+        "cc_std": 0.11990364673610682,
+        "is_factor": true,
+        "is_coprime": false
+      }
+    ],
+    "coprime_ds_sample": [
+      {
+        "d": 2,
+        "distinct_cc_values": 15,
+        "cc_mean": 0.005062181122448978,
+        "cc_std": 0.03459803060000144,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 3,
+        "distinct_cc_values": 20,
+        "cc_mean": 0.010323660714285714,
+        "cc_std": 0.03455768795846214,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 4,
+        "distinct_cc_values": 15,
+        "cc_mean": 0.005062181122448978,
+        "cc_std": 0.03459803060000144,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 5,
+        "distinct_cc_values": 23,
+        "cc_mean": 0.006719761075161772,
+        "cc_std": 0.038341874451574415,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 6,
+        "distinct_cc_values": 24,
+        "cc_mean": 0.013307077216851653,
+        "cc_std": 0.04486091555737895,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 7,
+        "distinct_cc_values": 26,
+        "cc_mean": 0.01309465765828516,
+        "cc_std": 0.056789932491429856,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 8,
+        "distinct_cc_values": 24,
+        "cc_mean": 0.016661352040816323,
+        "cc_std": 0.06103173879567303,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 9,
+        "distinct_cc_values": 25,
+        "cc_mean": -0.03607232366630862,
+        "cc_std": 0.0592644746746585,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 10,
+        "distinct_cc_values": 26,
+        "cc_mean": 0.014335490293678445,
+        "cc_std": 0.05867254960648551,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 11,
+        "distinct_cc_values": 30,
+        "cc_mean": -0.0410345956564444,
+        "cc_std": 0.0704600325565345,
+        "is_factor": false,
+        "is_coprime": true
+      }
+    ],
+    "kasami_correction": "Kasami theorem gives 3-valued CC ONLY for d=2^(n/2)\u00b11, NOT for all d|M_p. The cross-correlation approach to factor detection is NOT as straightforward as previously assumed.",
+    "method": "corrected_cross_correlation"
+  },
+  "cc_corrected_p13": {
+    "p": 13,
+    "M_p": 8191,
+    "is_mersenne_prime": true,
+    "num_factor_ds": 0,
+    "num_coprime_ds": 99,
+    "factor_cc_mean": null,
+    "coprime_cc_mean": 26.0,
+    "factor_cc_std": null,
+    "coprime_cc_std": 3.423035453683137,
+    "factor_ds_details": [],
+    "coprime_ds_sample": [
+      {
+        "d": 2,
+        "distinct_cc_values": 21,
+        "cc_mean": -0.006497130102040819,
+        "cc_std": 0.040712496983717525,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 3,
+        "distinct_cc_values": 22,
+        "cc_mean": -0.0074537627551020435,
+        "cc_std": 0.04766826106994626,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 4,
+        "distinct_cc_values": 21,
+        "cc_mean": -0.006497130102040819,
+        "cc_std": 0.040712496983717525,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 5,
+        "distinct_cc_values": 22,
+        "cc_mean": 0.0075334821428571465,
+        "cc_std": 0.04466029235427869,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 6,
+        "distinct_cc_values": 22,
+        "cc_mean": -0.0074537627551020435,
+        "cc_std": 0.04766826106994626,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 7,
+        "distinct_cc_values": 21,
+        "cc_mean": 0.009685905612244899,
+        "cc_std": 0.04661846386058856,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 8,
+        "distinct_cc_values": 21,
+        "cc_mean": -0.006497130102040819,
+        "cc_std": 0.040712496983717525,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 9,
+        "distinct_cc_values": 20,
+        "cc_mean": 0.0025908801020408144,
+        "cc_std": 0.039061279786231265,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 10,
+        "distinct_cc_values": 22,
+        "cc_mean": 0.0075334821428571465,
+        "cc_std": 0.04466029235427869,
+        "is_factor": false,
+        "is_coprime": true
+      },
+      {
+        "d": 11,
+        "distinct_cc_values": 21,
+        "cc_mean": 0.006816007653061225,
+        "cc_std": 0.04246963872581842,
+        "is_factor": false,
+        "is_coprime": true
+      }
+    ],
+    "kasami_correction": "Kasami theorem gives 3-valued CC ONLY for d=2^(n/2)\u00b11, NOT for all d|M_p. The cross-correlation approach to factor detection is NOT as straightforward as previously assumed.",
+    "method": "corrected_cross_correlation"
+  }
+}
