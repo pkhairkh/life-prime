@@ -1,0 +1,1570 @@
+{
+  "experiment": "path2_v3_breakthrough",
+  "timestamp": "2026-05-19 01:50:59",
+  "results": {
+    "7": {
+      "p": 7,
+      "M_p": 127,
+      "is_mersenne_prime": true,
+      "method_A": {
+        "p": 7,
+        "M_p": 127,
+        "is_mersenne_prime": true,
+        "budget": 127,
+        "num_candidates": 1,
+        "composite_detected": false,
+        "detection_details": [],
+        "factors_found": [],
+        "computation_time": 0.0007643699645996094,
+        "recovery_rate": null
+      },
+      "method_B": {
+        "p": 7,
+        "M_p": 127,
+        "is_mersenne_prime": true,
+        "poly1": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "small_order_found": true,
+        "order_found": 105,
+        "budget_used": 127,
+        "mersenne_factor_checks": [],
+        "computation_time": 0.0004787445068359375,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 3.361701965332031e-05,
+        "char_poly_of_P": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 7,
+        "M_p": 127,
+        "is_mersenne_prime": true,
+        "max_k": 3,
+        "num_residues_tested": 2,
+        "num_distinct_residues": 2,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 3.910064697265625e-05,
+        "all_residues_distinct": true
+      }
+    },
+    "11": {
+      "p": 11,
+      "M_p": 2047,
+      "is_mersenne_prime": false,
+      "method_A": {
+        "p": 11,
+        "M_p": 2047,
+        "is_mersenne_prime": false,
+        "budget": 2047,
+        "num_candidates": 3,
+        "composite_detected": true,
+        "detection_details": [
+          {
+            "d": 23,
+            "method": "trial_division",
+            "factor": 23
+          },
+          {
+            "d": 89,
+            "method": "trial_division",
+            "factor": 89
+          }
+        ],
+        "factors_found": [
+          23,
+          89
+        ],
+        "computation_time": 0.008252143859863281,
+        "recovery_rate": 1.0
+      },
+      "method_B": {
+        "p": 11,
+        "M_p": 2047,
+        "is_mersenne_prime": false,
+        "poly1": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "small_order_found": true,
+        "order_found": 868,
+        "budget_used": 2047,
+        "mersenne_factor_checks": [],
+        "computation_time": 0.004390716552734375,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 8.368492126464844e-05,
+        "char_poly_of_P": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 11,
+        "M_p": 2047,
+        "is_mersenne_prime": false,
+        "max_k": 6,
+        "num_residues_tested": 5,
+        "num_distinct_residues": 5,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.00012755393981933594,
+        "all_residues_distinct": true
+      }
+    },
+    "13": {
+      "p": 13,
+      "M_p": 8191,
+      "is_mersenne_prime": true,
+      "method_A": {
+        "p": 13,
+        "M_p": 8191,
+        "is_mersenne_prime": true,
+        "budget": 50000,
+        "num_candidates": 4,
+        "composite_detected": false,
+        "detection_details": [],
+        "factors_found": [],
+        "computation_time": 0.2667384147644043,
+        "recovery_rate": null
+      },
+      "method_B": {
+        "p": 13,
+        "M_p": 8191,
+        "is_mersenne_prime": true,
+        "poly1": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "P^Mp_is_identity": false,
+        "small_order_found": false,
+        "order_found": null,
+        "budget_used": 5000,
+        "mersenne_factor_checks": [],
+        "computation_time": 0.03280782699584961,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          },
+          {
+            "k": 11,
+            "is_identity": false
+          },
+          {
+            "k": 12,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 8.869171142578125e-05,
+        "char_poly_of_P": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 13,
+        "M_p": 8191,
+        "is_mersenne_prime": true,
+        "max_k": 8,
+        "num_residues_tested": 7,
+        "num_distinct_residues": 7,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.0002124309539794922,
+        "all_residues_distinct": true
+      }
+    },
+    "17": {
+      "p": 17,
+      "M_p": 131071,
+      "is_mersenne_prime": true,
+      "method_A": {
+        "p": 17,
+        "M_p": 131071,
+        "is_mersenne_prime": true,
+        "budget": 50000,
+        "num_candidates": 8,
+        "composite_detected": false,
+        "detection_details": [],
+        "factors_found": [],
+        "computation_time": 1.694204568862915,
+        "recovery_rate": null
+      },
+      "method_B": {
+        "p": 17,
+        "M_p": 131071,
+        "is_mersenne_prime": true,
+        "poly1": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "P^Mp_is_identity": true,
+        "small_order_found": false,
+        "order_found": null,
+        "budget_used": 5000,
+        "mersenne_factor_checks": [],
+        "computation_time": 0.044493913650512695,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          },
+          {
+            "k": 11,
+            "is_identity": false
+          },
+          {
+            "k": 12,
+            "is_identity": false
+          },
+          {
+            "k": 13,
+            "is_identity": false
+          },
+          {
+            "k": 14,
+            "is_identity": false
+          },
+          {
+            "k": 15,
+            "is_identity": false
+          },
+          {
+            "k": 16,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 0.00019478797912597656,
+        "char_poly_of_P": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 17,
+        "M_p": 131071,
+        "is_mersenne_prime": true,
+        "max_k": 23,
+        "num_residues_tested": 22,
+        "num_distinct_residues": 22,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.0009605884552001953,
+        "all_residues_distinct": true
+      }
+    },
+    "19": {
+      "p": 19,
+      "M_p": 524287,
+      "is_mersenne_prime": true,
+      "method_A": {
+        "p": 19,
+        "M_p": 524287,
+        "is_mersenne_prime": true,
+        "budget": 50000,
+        "num_candidates": 10,
+        "composite_detected": false,
+        "detection_details": [],
+        "factors_found": [],
+        "computation_time": 2.153837203979492,
+        "recovery_rate": null
+      },
+      "method_B": {
+        "p": 19,
+        "M_p": 524287,
+        "is_mersenne_prime": true,
+        "poly1": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "small_order_found": true,
+        "order_found": 4095,
+        "budget_used": 5000,
+        "mersenne_factor_checks": [],
+        "computation_time": 0.04303097724914551,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          },
+          {
+            "k": 11,
+            "is_identity": false
+          },
+          {
+            "k": 12,
+            "is_identity": false
+          },
+          {
+            "k": 13,
+            "is_identity": false
+          },
+          {
+            "k": 14,
+            "is_identity": false
+          },
+          {
+            "k": 15,
+            "is_identity": false
+          },
+          {
+            "k": 16,
+            "is_identity": false
+          },
+          {
+            "k": 17,
+            "is_identity": false
+          },
+          {
+            "k": 18,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 0.00020956993103027344,
+        "char_poly_of_P": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 19,
+        "M_p": 524287,
+        "is_mersenne_prime": true,
+        "max_k": 40,
+        "num_residues_tested": 39,
+        "num_distinct_residues": 39,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.003380298614501953,
+        "all_residues_distinct": true
+      }
+    },
+    "23": {
+      "p": 23,
+      "M_p": 8388607,
+      "is_mersenne_prime": false,
+      "method_A": {
+        "p": 23,
+        "M_p": 8388607,
+        "is_mersenne_prime": false,
+        "budget": 10000,
+        "num_candidates": 36,
+        "composite_detected": true,
+        "detection_details": [
+          {
+            "d": 47,
+            "method": "trial_division",
+            "factor": 47
+          }
+        ],
+        "factors_found": [
+          47
+        ],
+        "computation_time": 1.5572984218597412,
+        "recovery_rate": 0.5
+      },
+      "method_B": {
+        "p": 23,
+        "M_p": 8388607,
+        "is_mersenne_prime": false,
+        "poly1": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "P^Mp_is_identity": false,
+        "small_order_found": false,
+        "order_found": null,
+        "budget_used": 5000,
+        "mersenne_factor_checks": [
+          {
+            "factor": 47,
+            "exponent": 178481,
+            "P^exp_is_identity": false
+          },
+          {
+            "factor": 178481,
+            "exponent": 47,
+            "P^exp_is_identity": false
+          }
+        ],
+        "computation_time": 0.07618141174316406,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          },
+          {
+            "k": 11,
+            "is_identity": false
+          },
+          {
+            "k": 12,
+            "is_identity": false
+          },
+          {
+            "k": 13,
+            "is_identity": false
+          },
+          {
+            "k": 14,
+            "is_identity": false
+          },
+          {
+            "k": 15,
+            "is_identity": false
+          },
+          {
+            "k": 16,
+            "is_identity": false
+          },
+          {
+            "k": 17,
+            "is_identity": false
+          },
+          {
+            "k": 18,
+            "is_identity": false
+          },
+          {
+            "k": 19,
+            "is_identity": false
+          },
+          {
+            "k": 20,
+            "is_identity": false
+          },
+          {
+            "k": 21,
+            "is_identity": false
+          },
+          {
+            "k": 22,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 0.00037789344787597656,
+        "char_poly_of_P": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 23,
+        "M_p": 8388607,
+        "is_mersenne_prime": false,
+        "max_k": 127,
+        "num_residues_tested": 126,
+        "num_distinct_residues": 126,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.01115107536315918,
+        "all_residues_distinct": true
+      }
+    },
+    "29": {
+      "p": 29,
+      "M_p": 536870911,
+      "is_mersenne_prime": false,
+      "method_A": {
+        "p": 29,
+        "M_p": 536870911,
+        "is_mersenne_prime": false,
+        "budget": 10000,
+        "num_candidates": 173,
+        "composite_detected": true,
+        "detection_details": [
+          {
+            "d": 233,
+            "method": "trial_division",
+            "factor": 233
+          },
+          {
+            "d": 1103,
+            "method": "trial_division",
+            "factor": 1103
+          },
+          {
+            "d": 2089,
+            "method": "trial_division",
+            "factor": 2089
+          }
+        ],
+        "factors_found": [
+          233,
+          1103,
+          2089
+        ],
+        "computation_time": 8.014024019241333,
+        "recovery_rate": 1.0
+      },
+      "method_B": {
+        "p": 29,
+        "M_p": 536870911,
+        "is_mersenne_prime": false,
+        "poly1": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "P^Mp_is_identity": false,
+        "small_order_found": false,
+        "order_found": null,
+        "budget_used": 5000,
+        "mersenne_factor_checks": [
+          {
+            "factor": 233,
+            "exponent": 2304167,
+            "P^exp_is_identity": false
+          },
+          {
+            "factor": 1103,
+            "exponent": 486737,
+            "P^exp_is_identity": false
+          },
+          {
+            "factor": 2089,
+            "exponent": 256999,
+            "P^exp_is_identity": false
+          }
+        ],
+        "computation_time": 0.12210321426391602,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          },
+          {
+            "k": 11,
+            "is_identity": false
+          },
+          {
+            "k": 12,
+            "is_identity": false
+          },
+          {
+            "k": 13,
+            "is_identity": false
+          },
+          {
+            "k": 14,
+            "is_identity": false
+          },
+          {
+            "k": 15,
+            "is_identity": false
+          },
+          {
+            "k": 16,
+            "is_identity": false
+          },
+          {
+            "k": 17,
+            "is_identity": false
+          },
+          {
+            "k": 18,
+            "is_identity": false
+          },
+          {
+            "k": 19,
+            "is_identity": false
+          },
+          {
+            "k": 20,
+            "is_identity": false
+          },
+          {
+            "k": 21,
+            "is_identity": false
+          },
+          {
+            "k": 22,
+            "is_identity": false
+          },
+          {
+            "k": 23,
+            "is_identity": false
+          },
+          {
+            "k": 24,
+            "is_identity": false
+          },
+          {
+            "k": 25,
+            "is_identity": false
+          },
+          {
+            "k": 26,
+            "is_identity": false
+          },
+          {
+            "k": 27,
+            "is_identity": false
+          },
+          {
+            "k": 28,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 0.0007419586181640625,
+        "char_poly_of_P": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 29,
+        "M_p": 536870911,
+        "is_mersenne_prime": false,
+        "max_k": 800,
+        "num_residues_tested": 799,
+        "num_distinct_residues": 799,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.11215806007385254,
+        "all_residues_distinct": true
+      }
+    },
+    "31": {
+      "p": 31,
+      "M_p": 2147483647,
+      "is_mersenne_prime": true,
+      "method_A": {
+        "p": 31,
+        "M_p": 2147483647,
+        "is_mersenne_prime": true,
+        "budget": 10000,
+        "num_candidates": 302,
+        "composite_detected": false,
+        "detection_details": [],
+        "factors_found": [],
+        "computation_time": 14.5991051197052,
+        "recovery_rate": null
+      },
+      "method_B": {
+        "p": 31,
+        "M_p": 2147483647,
+        "is_mersenne_prime": true,
+        "poly1": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "poly2": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P_is_identity": false,
+        "P^Mp_is_identity": false,
+        "small_order_found": false,
+        "order_found": null,
+        "budget_used": 5000,
+        "mersenne_factor_checks": [],
+        "computation_time": 0.14066410064697266,
+        "frobenius_powers": [
+          {
+            "k": 0,
+            "is_identity": false
+          },
+          {
+            "k": 1,
+            "is_identity": false
+          },
+          {
+            "k": 2,
+            "is_identity": false
+          },
+          {
+            "k": 3,
+            "is_identity": false
+          },
+          {
+            "k": 4,
+            "is_identity": false
+          },
+          {
+            "k": 5,
+            "is_identity": false
+          },
+          {
+            "k": 6,
+            "is_identity": false
+          },
+          {
+            "k": 7,
+            "is_identity": false
+          },
+          {
+            "k": 8,
+            "is_identity": false
+          },
+          {
+            "k": 9,
+            "is_identity": false
+          },
+          {
+            "k": 10,
+            "is_identity": false
+          },
+          {
+            "k": 11,
+            "is_identity": false
+          },
+          {
+            "k": 12,
+            "is_identity": false
+          },
+          {
+            "k": 13,
+            "is_identity": false
+          },
+          {
+            "k": 14,
+            "is_identity": false
+          },
+          {
+            "k": 15,
+            "is_identity": false
+          },
+          {
+            "k": 16,
+            "is_identity": false
+          },
+          {
+            "k": 17,
+            "is_identity": false
+          },
+          {
+            "k": 18,
+            "is_identity": false
+          },
+          {
+            "k": 19,
+            "is_identity": false
+          },
+          {
+            "k": 20,
+            "is_identity": false
+          },
+          {
+            "k": 21,
+            "is_identity": false
+          },
+          {
+            "k": 22,
+            "is_identity": false
+          },
+          {
+            "k": 23,
+            "is_identity": false
+          },
+          {
+            "k": 24,
+            "is_identity": false
+          },
+          {
+            "k": 25,
+            "is_identity": false
+          },
+          {
+            "k": 26,
+            "is_identity": false
+          },
+          {
+            "k": 27,
+            "is_identity": false
+          },
+          {
+            "k": 28,
+            "is_identity": false
+          },
+          {
+            "k": 29,
+            "is_identity": false
+          },
+          {
+            "k": 30,
+            "is_identity": false
+          }
+        ],
+        "frobenius_time": 0.0009100437164306641,
+        "char_poly_of_P": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "char_poly_matches_poly1": false,
+        "char_poly_matches_poly2": false,
+        "additional_tests": {
+          "C1_plus_C2_order": null
+        }
+      },
+      "method_C": {
+        "p": 31,
+        "M_p": 2147483647,
+        "is_mersenne_prime": true,
+        "max_k": 1000,
+        "num_residues_tested": 1000,
+        "num_distinct_residues": 1000,
+        "identity_hits": 0,
+        "x_hits": 0,
+        "residue_repeat_count": 0,
+        "computation_time": 0.07078313827514648,
+        "all_residues_distinct": true
+      }
+    }
+  }
+}
