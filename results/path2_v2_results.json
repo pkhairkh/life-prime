@@ -1,0 +1,15 @@
+{
+  "experiment": "path2_v2_fast",
+  "timestamp": "2026-05-19 01:16:33",
+  "total_time": 48.01118040084839,
+  "analysis": {
+    "notable_metrics": [
+      "hw_fft_flatness",
+      "hw_wht_kurtosis",
+      "bisp_entropy",
+      "bisp_kurtosis",
+      "rank_full_frac"
+    ],
+    "brent_works_for_small_factors": false
+  }
+}
